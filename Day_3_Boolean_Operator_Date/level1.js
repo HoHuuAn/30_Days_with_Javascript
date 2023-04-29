@@ -64,25 +64,31 @@ console.log('python' === 'jargon')
 // Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
 console.log("Ex6:")
 // 4 > 3 && 10 < 12 true
-
 // 4 > 3 && 10 > 12 false
-// 4 > 3 || 10 < 12
-// 4 > 3 || 10 > 12
-// !(4 > 3)
-// !(4 < 3)
-// !(false)
-// !(4 > 3 && 10 < 12)
-// !(4 > 3 && 10 > 12)
-// !(4 === '4')
-// There is no 'on' in both dragon and python
+// 4 > 3 || 10 < 12 true
+// 4 > 3 || 10 > 12 true
+// !(4 > 3) false
+// !(4 < 3) true
+// !(false) true
+// !(4 > 3 && 10 < 12)  false
+// !(4 > 3 && 10 > 12) true
+// !(4 === '4')  true
+// There is no 'on' in both dragon and python: false
 
 // Use the Date object to do the following activities
 console.log("Ex7:")
-
+const now = new Date()
 // What is the year today?
+console.log(now.getFullYear())
 // What is the month today as a number?
+console.log(now.getMonth())
 // What is the date today?
+console.log(now.getDate())
 // What is the day today as a number?
+console.log(now.getDay())
 // What is the hours now?
+console.log(now.getHours())
 // What is the minutes now?
+console.log(now.getMinutes())
 // Find out the numbers of seconds elapsed from January 1, 1970 to now.
+console.log(now.getTime()) 
